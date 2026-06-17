@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+        }
+        .Main1{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+        }
+        .Sub11{
+            width: 100vw;
+            height: 75vh;
+            background-color: violet;
+            position: absolute;
+            top: 0vw;
+            left: 0vh;
+        }
+        .Sub11 img{
+            width: 100%;
+            height: 100%;  
+        }
+        .Sub12{
+            width: 100vw;
+            height: 25vh;
+            background-color: cyan;
+            position: absolute;
+            top: 75vh;
+            left: 0vh;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+        }
+        .Sub12 img{
+            width: 100%;
+            height: 75vh;  
+        }
+        .Main1:hover .Sub12{
+            height: 75vh;
+            top: 25vh;
+        }
+        .Sub13{
+            background-color: none;
+            position: absolute;
+            top: 3vh;
+            right: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            color: white;
+            Font-size: large;
+        }
+        .Sub13 td{
+            padding-right: 50px;
+        }
+        .Sub14{
+            width: 100vw;
+            height: 30vh;
+            background-color: none;
+            bottom: 15vh;
+            left: -100vw;
+            position: absolute;
+            font-size: 200px;
+            text-align: center;
+            color: white;
+            transition: 1s ease-in-out;
+        }
+        .Main1:hover .Sub14{
+            left: 0vw;
+        }
+        .Sub15{
+            width: 2vw;
+            height: 2vh;
+            top: 2vh;
+            left: 2vw;
+            position: absolute;
+        }
+        .Sub15 img{
+            width: 100px;
+        }
+        .Main2{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        .Main2 video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .Main3{
+            width: 100vw;
+            height: 100vh;
+            background-color: brown;
+            position: relative;
+        }
+        .Box3{
+            width: 50vw;
+            height: 50vh;
+            overflow: hidden;
+        }
+        .Box3 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .Box3 img:hover{
+            transform: scale3d(1.2,1.2,1.5);
+            transition: 0.5s ease-in-out;
+        }
+        .Sub31{
+            background-color: violet;
+            position: absolute;
+            left: 0vw;
+            top: 0vh;
+        }
+        .Sub32{
+            background-color: cyan;
+            position: absolute;
+            right: 0vw;
+            top: 0vh;
+        }
+        .Sub33{
+            background-color: yellow;
+            position: absolute;
+            left: 0vw;
+            top: 50vh;
+        }
+        .Sub34{
+            background-color: green;
+            position: absolute;
+            right: 0vw;
+            top: 50vh;
+        }
+        .Main4{
+            width: 100vw;
+            height: 50vh;
+            background-color: black;
+            color : white;
+            text-align: center;
+
+        }
+        .Main4 button{
+            width: 15vw;
+            height: 5vh;
+            background-color: red;
+            font-size: large;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10vh;
+        }
+        .Main4 button:hover{
+            background-color: rgb(57, 4, 4);
+            transition: 0.1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main1">
+        <div class="Sub11">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9j_QWEgX7Q9-WTg5n9KO63GCN8sCGbWTSwxU4VJTdyUbhLHiVpjHy-z4&s=10" alt="">
+        </div>
+        <div class="Sub12">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxL_TYTJ7lNTW3hnYEEKzVIjNiHCsIXOVVHtqGjjZHHTsksIA__rths4Vb&s=10" alt="">
+        </div>
+        <div class="Sub13">
+            <table>
+                <tr>
+                    <td>Home</td>
+                    <td>Racing</td>
+                    <td>Models</td>
+                    <td>Contact</td>
+                    <td>About</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Sub14">
+            F E R R A R I
+        </div>
+        <div class="Sub15">
+            <img src="https://www.citypng.com/public/uploads/preview/hd-ferrari-logo-transparent-background-701751694773105xaxoflrdiu.png" alt="">
+        </div>
+    </div>
+    <div class="Main2">
+        <video src="./ar.mp4" autoplay loop mute></video>
+    </div>
+    <div class="Main3">
+        <div class="Box3 Sub31">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTORhUNHXbYlOO3f0JREiDQWpJpQBBblFGkTv3CaihPwQ&s=10" alt="">
+        </div>
+        <div class="Box3 Sub32">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-887JaJXIC7w7jQjQns7-pTmX5TK8qmK8_gBn5OGnXg&s=10" alt="">
+        </div>
+        <div class="Box3 Sub33">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7zJdhP1Ghiv7WdNoA0IY3ODPKMzl8QXx49YIe34jhqQ&s=10" alt="">
+        </div>
+        <div class="Box3 Sub34">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQgs8pIak1ZIXDdNWODXNL8YFL0MGvEtxJyNG2_U24iuwIBnm_SRy53Q&s=10" alt="">
+        </div>
+    </div>
+    <div class="Main4">
+        <button>Explore</button>
+        <p>Formula 1 is where speed meets obsession. Twenty drivers. Twenty cars. One world championship. Every race is a high-stakes battle of nerve, precision, and split-second decisions—where a single mistake can cost everything and a bold move can make you a legend. Behind every driver is a team of hundreds, working around the clock to shave off thousandths of a second. The cars are engineering marvels, pushing the limits of physics at over 230 mph. From the glamour of Monaco to the chaos of wet races, F1 delivers drama like no other sport. It's not just about who's fastest—it's about strategy, tire wear, pit stops, and the relentless pursuit of perfection. In the end, only one stands on the top step. The rest? They go back to the drawing board and try again. Because in Formula 1, you're only as good as your last lap.</p>
+        <h2>ferrari@f1.com</h2>
+    </div>    
+</body>
+</html>
